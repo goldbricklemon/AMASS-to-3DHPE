@@ -54,8 +54,8 @@ Save your custom regressor as a serialized float32 numpy array (i.e. with `np.sa
 Next, [download](https://amass.is.tue.mpg.de/download.php) the AMASS dataset. 
 Since AMASS is a collection of many different motion capture datasets, you can download your own preferred subset of datasets.
 
-**NOTE**: This script only supports datasets that have been SMPLified with the SMPL+H model. 
-Only download datasets as `SMPL+H G`. Some datasets are not available in this format.
+**NOTE**: This script only supports datasets that have been meshed with the SMPL+H model. 
+Only download datasets as `SMPL+H G`. Avoid datasets that are not available in this format.
 
 Download each dataset, extract its contents and place them in a directory with the name of that dataset. 
 The following lists all datasets (and the name of the corresponding directories) that have been tested so far:
@@ -123,7 +123,7 @@ python convert.py
 --batch_size 2048
 ```
 
-Here, we run the rigging and skinning of the SMPL meshes on the GPU, with a batch size of 2048. 
+By default, we run the rigging and skinning of the SMPL meshes on the GPU, with a batch size of 2048. 
 You can reduce the batch size or omit the gpu switch entirely (CPU mode) if needed.
 See also
 ```
