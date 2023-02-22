@@ -123,7 +123,7 @@ python convert.py
 --batch_size 2048
 ```
 
-By default, we run the rigging and skinning of the SMPL meshes on the GPU, with a batch size of 2048. 
+By default, we run the posing and skinning of the SMPL meshes on the GPU, with a batch size of 2048. 
 You can reduce the batch size or omit the gpu switch entirely (CPU mode) if needed.
 See also
 ```
